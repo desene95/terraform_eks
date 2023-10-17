@@ -1,0 +1,27 @@
+---
+
+global:
+  network:
+    vpc:
+      vpc_name: "my_network_1"
+      cidr_block: "10.0.0.0/16"
+      location: "ca-central-1"
+    subnets:
+      priv_subnet_1:
+        cidr_block: "10.0.0.0/19"
+        zones: "ca-central-1a"
+      priv_subnet_2:
+        cidr_block: "10.0.32.0/29"
+        zones: "ca-central-1b"
+      pub_subnet_1:
+        cidr_block: "10.0.64.0/19"
+        zones: "ca-central-1a"
+        map_pub_ip: true
+      pub_subnet_2:
+        cidr_block: "10.0.64.0/19"
+        zones: "ca-central-1b"
+        map_pub_ip: true
+    
+
+      
+

@@ -1,0 +1,7 @@
+---
+
+global:
+  region: "ca-central-1"
+  remote_state:
+    bucket_name: "dame-terraform-bucket"
+    key: "terraform/terraform.tfstate"
