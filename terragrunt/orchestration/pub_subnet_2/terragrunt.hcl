@@ -5,12 +5,12 @@ locals {
 }
 
 terraform {
-    source = "/Users/damianesene/terraform_eks/modules/priv_subnets"
+    source = "/Users/damianesene/terraform_eks/modules/pub_subnet"
 }
 
 inputs = {
-    cidr_block = local.resources.global.network.subnets.priv_subnet_1.cidr_block
-    zones      = local.resources.global.network.subnets.priv_subnet_1.zones
+    cidr_block = local.resources.global.network.subnets.pub_subnet_2.cidr_block
+    zones      = local.resources.global.network.subnets.pub_subnet_2.zones
     vpc_name = local.resources.global.network.vpc.vpc_name
     vpc_cidr_block = local.resources.global.network.vpc.cidr_block
 }
