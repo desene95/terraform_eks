@@ -26,6 +26,16 @@ global:
     nat_gateway:
       eip_name: "eip_1"
       nat_name: "nat_gw_1"
+
+  iam:
+    eks_role_name: "my_eks_role"
+    eks_node_role_name: "my_eks_node_role"
+  
+  eks:
+    eks_name: "my_eks"
+    node_group_name: "my_eks_node_group"
+    
+
       
     
     
