@@ -33,7 +33,7 @@ global:
   
   eks:
     eks_name: "my_eks"
-    node_group_name: "my_eks_node_group"
+    node_group_name: "my_eks_node_group1"
     
 
       
